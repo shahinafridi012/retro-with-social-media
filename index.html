@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API WITH SOCIAL MEDIA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6a09aef1bf.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+    <style>
+        .color {
+            font-family: "Mulish", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start from here  -->
+    <header class="container lg:mx-auto ">
+        <div class="navbar bg-base-100 ">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-2xl text-black font-extrabold">ReTro</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+
+                    <li><a><i class="fa-solid fa-house"></i></a></li>
+                    <li><a><i class="fa-solid fa-pen"></i></a></li>
+                    <li><a><i class="fa-solid fa-user-plus"></i></a></li>
+                    <li class="tooltip" data-tip="hello"><a><i class="fa-regular fa-flag"></i></a></li>
+                    <li title="Sign In" class="bg-[#797DFC] text-white text-1xl font-bold rounded-full "><a>Sign In</a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- banner section start from here  -->
+        <section class="bg-indigo-950  mx-auto  rounded-2xl ">
+            <div class="hero lg:h-[550px] flex  " style="background-image: url(/images/bgbanner.png);">
+                <div class="space-y-7 pl-10 ">
+                    <h3 class="text-7xl font-extrabold text-white color ">Welcome to the <br><span
+                            class="text-indigo-950">ReTro</span>Forum</h3>
+                    <p class="text-white">Share your favorite opinion and win and wp forum coffee mug!</p>
+                    <div class="flex"> <input id="search-field" type="text" placeholder="search..." class="input input-bordered w-full max-w-xs" />
+                        <button onclick="handleSearch()" class="btn bg-[#797DFC]">Search</button> </div>
+                </div>
+                <div class="bg-[#FFFFFF] rounded-2xl lg:w-[371px]  space-y-3 mx-auto p-8  ">
+                    <div class="flex justify-evenly">
+                        <h1>Registered Users</h1>
+                        <h1>01</h1>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <h1>Registered Users</h1>
+                        <h1>01</h1>
+                    </div>
+                    <div class="flex justify-evenly">
+                        <h1>Registered Users</h1>
+                        <h1>01</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ApI functional  -->
+        <section class="mt-10">
+            <div class="text-center space-y-5">
+                    <h3 class="text-5xl text-black font-extrabold color">Let’s Discuss</h3>
+                    <p class="">Yes, you can run unit tests and view the results directly within the app. The <br>
+                        integrated testing features allow for a streamlined .</p>
+            </div>
+
+
+
+
+
+
+
+            <!-- aMar kam oise ow div lOiYa  so be-care-full -->
+            <div class="flex justify-between mt-10 ">
+                <div class=" grid gap-6 " id="dataLoad">
+               
+
+                    <!-- click and dynamic result outside -->
+                                   
+                               </div>
+                               <div class="bg-[#F3F3F5] lg:w-[400px] rounded-3xl">
+                                   <div class="items-center flex justify-evenly">
+                                       <div><h3 class="text-black font-extrabold">Title</h3></div>
+                                       <div>
+                                        <p><i class="fa-solid fa-check text-green-500"></i><i class="fa-solid fa-check text-green-500"></i>Mark as read (<span id="number">0</span>)</p></div>
+                                   </div>
+                                  <div class="grid gap-3" id="dynamic-showing">
+
+                                  </div>
+                                   </div>
+                           </section>
+            
+        <section>
+            <div  class="container bg-[#12132D] rounded-2xl mx-auto relative mt-10 flex p-10 justify-evenly">
+                <div class="justify-center  space-y-5 mt-20 ">
+                    <h3 class="text-5xl font-extrabold text-white">Join Our Forum</h3>
+                    <p class="text-white">Share your favorite opinion and win and wp forum coffee mug! Yes, you can <br>run unit tests and view the results directly within the app. </p>
+                    <button class=" p-2.5 text-white font-extrabold color hover:bg-gray-500  bg-[#797DFC] rounded-full ">Registered Now</button>
+                 </div>
+                <div>
+                    <img src="/images/joinforum.png" alt="">
+                </div>     
+            </div>
+            <!-- latest posts -->
+                 <div class="text-center mt-10">
+                <h3 class="text-5xl text-black font-extrabold color">Latest Posts</h3>
+                <p>Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+
+                 </div>   
+                 <!-- posts pics and data here this section is dynamic -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 mx-auto gap-5" id="latest-post">
+                  
+                 </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content mt-10 bg-[#12132D] text-white">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav> 
+        <form>
+          <h6 class="footer-title">Newsletter</h6> 
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label> 
+            <div class="join">
+              <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
+              <button class="btn btn-primary join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+      <!-- <div class="flex   ">
+        <div class="grid flex-grow h-32 card bg-base-300 rounded-box  ">
+           <div class="flex justify-evenly items-center">
+            <div><h3>10 Kids Unaware of Their <br> Halloween Costume</h3></div>
+            <div>
+              <i class="fa-regular fa-eye">156</i>
+            </div>
+          </div> 
+           </div>
+        
+      </div>  -->
+    <script src="/index.js"></script>
+    <script src="/latest.js"></script>
+</body>
+
+
+</html>
